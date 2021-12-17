@@ -52,5 +52,10 @@ if choice == "1":
         exit()
 elif choice == "2":
     print("Withdraw Money")
+    print("1. MTN User")
+    print("2. Airtel User")
+    user = input("Select Mobile user: ")
+    if user == "1":
+        amount = int(input("Enter Amount: "))
 else:
     print("UNKOWN APPLICATION")
