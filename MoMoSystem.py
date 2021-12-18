@@ -59,5 +59,15 @@ elif choice == "2":
         amount = int(input("Enter Amount: "))
         if amount >= 500:
             pin = int(input("Enter your Airtel Money PIN to contiue: "))
+            if pin >= 2021:
+                print(str(amount) + " has been withdrawn!")
+            else:
+                print("Wrong PIN please check your PIN Again")
+                exit()
+        else:
+            print("Please enter Amount above 500/=")
+            exit() 
+    elif user == "2":
+                          
 else:
     print("UNKOWN APPLICATION")
