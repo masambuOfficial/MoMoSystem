@@ -57,5 +57,7 @@ elif choice == "2":
     user = input("Select Mobile user: ")
     if user == "1":
         amount = int(input("Enter Amount: "))
+        if amount >= 500:
+            pin = int(input("Enter your Airtel Money PIN to contiue: "))
 else:
     print("UNKOWN APPLICATION")
